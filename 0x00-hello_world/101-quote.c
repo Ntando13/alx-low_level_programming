@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point
- *Return: Always 0 (Success)
+ * Descrption: main A c program that prints a line
+ *Return: Always 1 (Success)
  */
 int main(void)
 {
-write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-sizeof("and that piece of art is useful\" - Dora Korpar, 2015-10-19"));
+	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
 return (1);
 }
