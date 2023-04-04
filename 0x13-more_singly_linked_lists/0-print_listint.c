@@ -6,7 +6,7 @@
  *
  * Return: the number of nodes
  */
-print_listint(const listint_t *h): size_t;
+size_t print_listint(const listint_t *h)
 {
 	const listint_t *cursor = h;
 	size_t count = 0;
