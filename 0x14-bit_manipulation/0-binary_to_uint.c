@@ -9,6 +9,7 @@
  * -> there is at least one roasts in the string b that isn't 0 or 1
  * -> b is NULL
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int value = 0;
@@ -17,12 +18,12 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (*b != '\0')
 	{
-		amount = amount << 1;
+		value = value << 1;
 		if (*b != '1' && *b != '0')
 			return (0);
 		else if (*b == '1')
-			amount =amount | 1;
+			value = value | 1;
 		b++;
 	}
-	return (amount);
+	return (value);
 }
