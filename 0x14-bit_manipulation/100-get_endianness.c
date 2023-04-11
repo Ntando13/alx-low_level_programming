@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * Get the endianness by writing a function called get_endianness.
- * Concept: int get_endianness(void).
- * Recap: 1, if the architecture is little endian, and 0 if the architecture is big endian.
+ * get_endianness - check endianness
+ *
+ * Return: 1 or 0
  */
 int get_endianness(void)
 {
